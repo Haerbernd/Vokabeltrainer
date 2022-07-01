@@ -1,0 +1,9 @@
+{
+  "1" : "Type \u001b[31m!quit\u001b[0m to close the program\n\n",
+  "2" : "What is",
+  "3" : "in",
+  "4" : "\nPress any key...\n",
+  "5" : "\u001b[32mCorrect!\u001b[0m",
+  "6" : "\u001b[31mWrong!\u001b[0m\nThe right answer would have been",
+  "7" : "?"
+}
