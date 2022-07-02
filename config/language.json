@@ -1,0 +1,25 @@
+{
+  "possible-options" : ["de", "en"],
+  "de" : {
+    "1" : "Schreibe \u001b[31m!quit\u001b[0m um das Programm zu schließen\n\n",
+    "2" : "Was heißt",
+    "3" : "auf",
+    "4" : "\nDrücke eine beliebige Taste...\n",
+    "5" : "\u001b[32mKorrekt!\u001b[0m",
+    "6" : "\u001b[31mFalsch!\u001b[0m\nDie richtige Antwort wäre",
+    "7" : "?",
+    "de" : "Deutsch",
+    "en" : "Englisch"
+  },
+  "en" : {
+    "1" : "Type \u001b[31m!quit\u001b[0m to close the program\n\n",
+    "2" : "What is",
+    "3" : "in",
+    "4" : "\nPress any key...\n",
+    "5" : "\u001b[32mCorrect!\u001b[0m",
+    "6" : "\u001b[31mWrong!\u001b[0m\nThe right answer would have been",
+    "7" : "?",
+    "de" : "German",
+    "en" : "English"
+  }
+}
