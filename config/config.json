@@ -1,5 +1,6 @@
 {
   "program-language" : "de",
-  "vocab-to" : "en",
+  "vocab-to" : "de-en",
+  "possible-vocab-to-options" : ["de-en", "en-de"],
   "os" : "windows"
 }

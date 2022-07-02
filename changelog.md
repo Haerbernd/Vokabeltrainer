@@ -1,6 +1,4 @@
-##Changelog Version 0.2a
-	-changed the translation of desk
-	-added table as vocabulary
-	-changed the translation of card
-	-added map as vocabulary
-	-added the GNU General Public License v3.0 as license
+##Changelog Version 0.3
+	- solved problem which outputs a Newline + None, when a vocabulary is translated wrong
+    - remade the entire system of choosing a language for the proggram as well as the vocabularies through which a 
+    modification of the vocabulary.py file is no longer neccessary but only one of the .json files

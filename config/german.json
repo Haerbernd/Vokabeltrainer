@@ -1,9 +1,0 @@
-{
-  "1" : "Schreibe \u001b[31m!quit\u001b[0m um das Programm zu schließen\n\n",
-  "2" : "Was heißt",
-  "3" : "auf",
-  "4" : "\nDrücke eine beliebige Taste...\n",
-  "5" : "\u001b[32mKorrekt!\u001b[0m",
-  "6" : "\u001b[31mFalsch!\u001b[0m\nDie richtige Antwort wäre",
-  "7" : "?"
-}
