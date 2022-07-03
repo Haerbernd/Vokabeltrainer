@@ -1,9 +1,9 @@
-#Vokabeltrainer
+# Vokabeltrainer
 
 This program, the Vokabeltrainer (german for Vocabulary trainer), was made to help you practice vocabularies of 
 different languages. It relies but not on an API but of a self-written customizable dictionary in form of a .json file.
 
-##Configuration
+## Configuration
 
 You can configure the program by editing the config.json file in the config folder. Through changing the value of each 
 key (the words in the second double quation marks (example: `"program-language" : "en"`, "program language" = key, 
@@ -23,7 +23,7 @@ Last but not least `"os"` decides which os you use. This is extremly important b
 command which is different on different operating systems. Currently, supported are Windows and Linux. Their respective 
 values are `"windows"` and `"linux"`.
 
-##Adding Vocabularies
+## Adding Vocabularies
 
 To add vocabularies or change existing ones, edit the vocabulary.json in the vocab folder.
 
@@ -44,14 +44,14 @@ Don't forget: Every word as to be in double quation marks ("word") and after eac
 the last one, there you must not set a comma). All values (words in vocabulary languages) **MUST** be written lower case 
 only.
 
-##Ideas, Problems, Translations, Questions, etc
+## Ideas, Problems, Translations, Questions, etc
 
 If you have ideas for new programs or for new or better functions of existing ones I'd be happy if you would inform me. 
 The same applies for if you find problems in one of my programs, want to translate it (or already have) and don't 
 know how to add it properly, have questions or anything similar please inform me/write me a message (preferably in 
 German or English) on Discord (Der sportliche Metzger#9465) or write an email to dersportlichemetzger@gmail.com.
 
-##Legal
+## Legal
 
 As you can see in the LICENSE this program uses the GNU General Public License v3.0. You can find out more about it 
 here: https://choosealicense.com/licenses/gpl-3.0/
