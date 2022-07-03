@@ -1,4 +1,3 @@
-## Changelog Version 0.3a
-	- added more de-en vocabularies
-    - added more en-de vocabularies
-    - added machine translated Spanish (es-mt) as program language
+## Changelog Version 0.3b
+    - added machine translated Russian (ru-mt) as program language
+    - corrected errors in the machine translation of Spanish
