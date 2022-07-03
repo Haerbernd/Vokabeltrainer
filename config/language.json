@@ -1,5 +1,5 @@
 {
-  "possible-options" : ["de", "en", "es-mt"],
+  "possible-options" : ["de", "en", "es-mt", "ru-mt"],
   "de" : {
     "1" : "Schreibe \u001b[31m!quit\u001b[0m um das Programm zu beenden\n\n",
     "2" : "Was heißt",
@@ -10,7 +10,8 @@
     "7" : "?",
     "de" : "Deutsch",
     "en" : "Englisch",
-    "es" : "Spanisch"
+    "es" : "Spanisch",
+    "ru" : "Russisch"
   },
   "en" : {
     "1" : "Type \u001b[31m!quit\u001b[0m to close the program\n\n",
@@ -22,11 +23,12 @@
     "7" : "?",
     "de" : "German",
     "en" : "English",
-    "es" : "Spanish"
+    "es" : "Spanish",
+    "ru" : "Russian"
   },
   "es-mt" : {
-    "1" : "Escribe \u001B[31m!quit\u001B[0m para terminar el programa",
-    "2" : "Lo que significa",
+    "1" : "Escribe \u001B[31m!quit\u001B[0m para terminar el programa\n\n",
+    "2" : "¿Como se dice",
     "3" : "en",
     "4" : "\nPresiona cualquier tecla...\n",
     "5" : "\u001B[32mCorrecto\u001B[0m",
@@ -34,6 +36,20 @@
     "7" : "?",
     "de" : "Alemán",
     "en" : "Inglés",
-    "es" : "Español"
+    "es" : "Español",
+    "ru" : "Ruso"
+  },
+  "ru-mt" : {
+    "1" : "Напишите \u001b[31m!quit\u001b[0m для завершения программы\n\n",
+    "2" : "Что такое",
+    "3" : "в",
+    "4" : "\nНажмите любую клавишу...\n",
+    "5" : "\u001b[32mПравильно!\u001b[0m",
+    "6" : "\u001b[31mНеправильно!\u001b[0m\nПравильный ответ",
+    "7" : "языке?",
+    "de" : "Немецкий",
+    "en" : "Английский",
+    "es" : "Испанский",
+    "ru" : "Русский"
   }
 }
