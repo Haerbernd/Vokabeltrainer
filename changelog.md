@@ -1,4 +1,4 @@
-## Changelog Version 0.3
-	- solved problem which outputs a Newline + None, when a vocabulary is translated wrong
-	- remade the entire system of choosing a language for the program as well as the vocabularies through which a 
-	modification of the vocabulary.py file is no longer necessary but only one of the .json files
+## Changelog Version 0.3a
+	- added more de-en vocabularies
+    - added more en-de vocabularies
+    - added machine translated Spanish (es-mt) as program language

@@ -1,7 +1,7 @@
 {
-  "possible-options" : ["de", "en"],
+  "possible-options" : ["de", "en", "es-mt"],
   "de" : {
-    "1" : "Schreibe \u001b[31m!quit\u001b[0m um das Programm zu schließen\n\n",
+    "1" : "Schreibe \u001b[31m!quit\u001b[0m um das Programm zu beenden\n\n",
     "2" : "Was heißt",
     "3" : "auf",
     "4" : "\nDrücke eine beliebige Taste...\n",
@@ -9,7 +9,8 @@
     "6" : "\u001b[31mFalsch!\u001b[0m\nDie richtige Antwort wäre",
     "7" : "?",
     "de" : "Deutsch",
-    "en" : "Englisch"
+    "en" : "Englisch",
+    "es" : "Spanisch"
   },
   "en" : {
     "1" : "Type \u001b[31m!quit\u001b[0m to close the program\n\n",
@@ -20,6 +21,19 @@
     "6" : "\u001b[31mWrong!\u001b[0m\nThe right answer would have been",
     "7" : "?",
     "de" : "German",
-    "en" : "English"
+    "en" : "English",
+    "es" : "Spanish"
+  },
+  "es-mt" : {
+    "1" : "Escribe \u001B[31m!quit\u001B[0m para terminar el programa",
+    "2" : "Lo que significa",
+    "3" : "en",
+    "4" : "\nPresiona cualquier tecla...\n",
+    "5" : "\u001B[32mCorrecto\u001B[0m",
+    "6" : "\u001B[31mIncorrecto\u001B[0m\nLa respuesta correcta sería",
+    "7" : "?",
+    "de" : "Alemán",
+    "en" : "Inglés",
+    "es" : "Español"
   }
 }

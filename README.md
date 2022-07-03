@@ -9,10 +9,11 @@ You can configure the program by editing the config.json file in the config fold
 key (the words in the second double quation marks (example: `"program-language" : "en"`, "program language" = key, 
 "en"= value)) you can configure the program.
 
-`"program-language"` decides the language in which the programs texts will be displayed. Currently, only German and 
-English are supported. You can see all possible values at `"possible-options"` in language.json in the config folder. 
-In this file you can also add more translations by opening a new dictionary in it, choosing a language code, adding it 
-to `"possible-options"` and translating all the values for the same keys in your new dictionary.
+`"program-language"` decides the language in which the programs texts will be displayed. Currently German, Englisch and 
+machine translated Spanish (`es-mt`) are supported. You can see all possible values at `"possible-options"` in 
+language.json in the config folder. In this file you can also add more translations by opening a new dictionary in it, 
+choosing a language code, adding it to `"possible-options"` and translating all the values for the same keys in your 
+new dictionary.
 
 `"vocab-to"` decides the origin language and the translated language of the vocabularies. The first value (for 
 example: `en`) sets the origin language (the language you know and will start translating from), then a hyphen (-) is 
