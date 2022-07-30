@@ -28,14 +28,26 @@ logger.addHandler(fileh)
 
 # opens the vocabulary dictionary
 logger.debug('Start reading vocabulary dictionary...')
-file = open('./vocab/vocabulary.json', 'r+', encoding='UTF-8')
+try:
+    file = open('./vocab/vocabulary.json', 'r+', encoding='UTF-8')
+except FileNotFoundError:
+    logger.error('"vocabulary.json" was not found...')
+    print('\u001b[31mError\u001b[0m: "vocabulary.json" was not found...')
+    logger.warning('The program will be shutted down...\n\n')
+    sys.exit(0)
 vocab = json.load(file)
 file.close()
 logger.debug('Finished reading vocabulary dictionary...')
 
 # opens the config file
 logger.debug('Start reading config...')
-file = open('./config/config.json', 'r+', encoding='UTF-8')
+try:
+    file = open('./config/config.json', 'r+', encoding='UTF-8')
+except FileNotFoundError:
+    logger.error('"config.json" was not found...')
+    print('\u001b[31mError\u001b[0m: "config.json" was not found...')
+    logger.warning('The program will be shutted down...\n\n')
+    sys.exit(0)
 config = json.load(file)
 file.close()
 logger.debug('Finished reading config...')
@@ -52,8 +64,8 @@ else:
           'Use one of the following', prog_lang['possible-options'])
     input('Press any key...\n')
     logger.error('\u001b[31mError\u001b[0m: Invalid option at "program-language" in "config.json"\n'
-          'Use one of the following', prog_lang['possible-options'], '...')
-    logger.warning('The program will be shutted down...')
+                 'Use one of the following', prog_lang['possible-options'], '...')
+    logger.warning('The program will be shutted down...\n\n')
     sys.exit(0)
 logger.debug('Finished setting program language...')
 
@@ -67,8 +79,8 @@ else:
           'Use one of the following', config['possible-vocab-to-options'])
     input('Press any key...\n')
     logger.error('\u001b[31mError\u001b[0m: Invalid option at "possible-vocab-to-options" in "config.json"\n'
-          'Use one of the following', config['possible-vocab-to-options'], '...')
-    logger.warning('The program will be shutted down...')
+                 'Use one of the following', config['possible-vocab-to-options'], '...')
+    logger.warning('The program will be shutted down...\n\n')
     sys.exit(0)
 logger.debug('Finished setting vocabulary-language...')
 
@@ -89,25 +101,30 @@ elif config['os'] == 'linux':
 else:
     input('\u001b[31mError\u001b[0m: Invalid option at "os" in "config.json"\nUse either "windows" or "linux"')
     logger.error('\u001b[31mError\u001b[0m: Invalid option at "os" in "config.json"\nUse either "windows" or "linux"')
-    logger.warning('The program will be shutted down...')
+    logger.warning('The program will be shutted down...\n\n')
     sys.exit(0)
 logger.debug('Finished setting operating system...')
 
 # main program
 while True:
+    logger.debug('Start selecting vocabulary...')
     vocabulary = random_vocab()
+    logger.debug('Finished selecting vocabulary...')
+    logger.debug(vocabulary + ' was selected as vocabulary...')
     print(prog_text['1'])
     print(prog_text['2'], vocabulary.upper(), prog_text['3'], prog_text[vocab_lang], prog_text['7'])
     player_input = input('>')
     if player_input.lower() == vocab[config['vocab-to']][vocabulary]:
         print(prog_text['5'])
         input(prog_text['4'])
+        logger.debug('The player successfully guessed the vocabulary...')
     elif player_input.lower() == '!quit':
-        logger.warning('The program will be shutted down...')
+        logger.warning('The program will be shutted down...\n\n')
         sys.exit(0)
     else:
         print(prog_text['6'], vocab[config['vocab-to']][vocabulary])
         input(prog_text['4'])
+        logger.debug('The player failed guessing the vocabulary...')
     if config['os'] == 'windows':
         os.system('cls')
     elif config['os'] == 'linux':
