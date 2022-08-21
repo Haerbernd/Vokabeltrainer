@@ -1,5 +1,5 @@
 import re
-import logger as log
+from src import logger as log
 
 
 def clean_list(text):
