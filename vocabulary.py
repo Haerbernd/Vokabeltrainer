@@ -2,7 +2,7 @@ import json
 import random
 import sys
 import os
-from src import textcleaner as tlc, logger as log
+from src import logger as log, textcleaner as tlc
 
 # opens the vocabulary dictionary
 log.main.info('Start reading vocabulary dictionary...')
