@@ -3,10 +3,10 @@ from datetime import datetime
 import os
 from os.path import exists
 
-if exists('log.log'):
-    os.remove('log.log')
+if exists('../log.log'):
+    os.remove('../log.log')
 
-logging.basicConfig(filename='log.log',
+logging.basicConfig(filename='../log.log',
                     format='%(asctime)s : [%(name)s] : %(module)s - %(levelname)s - %(lineno)d: %(message)s',
                     level=logging.DEBUG)
 logging.info('BasicConfiguration of logging done...')
